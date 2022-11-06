@@ -1,4 +1,5 @@
 async-timeout==4.0.2
+wheel
 awscli==1.22.27
 botocore==1.23.27
 certifi==2022.9.24
