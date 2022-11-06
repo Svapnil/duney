@@ -14,7 +14,7 @@ def hello_world():
     return """
         <div>
             <p>Here's an example of data you can get from the Dune API!!</p>
-            <p>This is information that has been retrieved by using Dune to lookup the .eth addres svapnil.eth</p>
+            <p>This is information that has been retrieved by using Dune to lookup the .eth address svapnil.eth</p>
             <p>Check out the origin of this query <a href="https://dune.com/queries/1532121">here<a>:</p>
             <h3>Address</h3>
             <p>%s</p>
