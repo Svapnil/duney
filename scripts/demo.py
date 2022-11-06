@@ -22,6 +22,8 @@ def get_query_results(execution_id):
     response = get(url, headers=HEADERS)
     return response
 
-id = execute_query(469990)
+# id = execute_query(1532121)
 print(id)
-print(get_query_results(id))
+print(get_query_results("01GH553ZX8VX5WTZVJD45AV3XV"))
+
+r = get_query_results('01GH553ZX8VX5WTZVJD45AV3XV')
