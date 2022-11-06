@@ -14,6 +14,12 @@ def execute_query(query_id):
     response = post(url, headers=HEADERS)
     return response.json()["execution_id"]
 
+def get_ens_query_execution_id(ens_domain):
+    url = make_api_url("query", "execute", 1531883)
+    params = {"ens_domain": f"{ens_domain}.eth"}
+    response = post(url, params=params, headers=HEADERS)
+    return response.json()["execution_id"]
+
 def get_query_results(execution_id):
     url = make_api_url("execution", "results", execution_id)
     response = get(url, headers=HEADERS)
