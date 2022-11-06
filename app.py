@@ -27,7 +27,7 @@ def hello_world():
 
 @app.route('/<ens_domain>')
 def get_ens_info(ens_domain):
-  exec_id = get_ens_query_execution_id(ens_domain)
+#   exec_id = get_ens_query_execution_id(ens_domain)
 
   # Have we already run this query?
   if redis.exists(f"{ens_domain}.exec_id"):
